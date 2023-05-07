@@ -1,0 +1,19 @@
+--> API Endpoints (ASP.NET Core)
+	*/user/signup,login
+      */device/link,delink
+      */sms/send,list,status
+      */sms/bulk/send,status
+--> DATABASE 
+	*/mysql, Dapper & MySqlConnector
+--> Background Workers
+	*/ASP.NET Core Hosted Service
+--> Message Broker
+	*/RabbitMQ
+--> FCM
+--> Android APP
+	*/queue
+--> Dashboard
+	Angualr
+	-> Signup, Login
+	-> Device Link/Delink, QR
+	-> SMS listing with status
