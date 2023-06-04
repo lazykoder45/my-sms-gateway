@@ -7,9 +7,25 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Templates\Emails\RegistartionVerifyEmail.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Templates\Emails\RegistartionVerifyEmail.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MailKit" Version="4.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\MySmsGateway.Dao\MySmsGateway.Dao.csproj" />
     <ProjectReference Include="..\MySmsGateway.Entity\MySmsGateway.Entity.csproj" />
     <ProjectReference Include="..\MySmsGateway.Util\MySmsGateway.Util.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Templates\Emails\RegistartionVerifyEmail.html" />
   </ItemGroup>
 
 </Project>
